@@ -21,7 +21,7 @@ import {
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -212,14 +212,15 @@ function App() {
                 sigo creciendo como profesional en la
                 industria.
               </p>
-
-              <div className="flex flex-wrap gap-4">
-                <button
-                  onClick={() => scrollToSection('projects')}
-                  className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105"
-                >
-                  Ver Proyectos
-                </button>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="/CV-Alan Rodriguez.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-block"
+              >
+                Abrir CV
+              </a>
                 <button
                   onClick={() => scrollToSection('contact')}
                   className="bg-gradient-to-r from-gray-600 to-gray-800 hover:from-gray-700 hover:to-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg"
@@ -227,10 +228,9 @@ function App() {
                   Contactar
                 </button>
               </div>
-
               <div className="flex space-x-6 pt-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/AlanRanchs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-gray-700 transition-colors duration-200"
@@ -238,7 +238,7 @@ function App() {
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/alanrdz10/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-500 hover:text-gray-700 transition-colors duration-200"
@@ -246,7 +246,7 @@ function App() {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:alanjrr.isc@gmailcom"
                   className="text-gray-500 hover:text-gray-700 transition-colors duration-200"
                 >
                   <Mail className="w-6 h-6" />
@@ -367,7 +367,7 @@ function App() {
                   <Server className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold">Backend</h3>
-                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Node.js, Express, Python, Java, APIs REST</p>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Node.js, Express, Java, APIs REST</p>
               </div>
             </div>
             
@@ -517,7 +517,7 @@ function App() {
                   </div>
                   <div>
                     <p className={`font-semibold ${isDarkMode ? 'text-gray-100' : 'text-gray-900'}`}>Email</p>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>alan.rodriguez@sistemas.edu</p>
+                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>alanjrr.isc@gmailcom</p>
                   </div>
                 </div>
                 
@@ -527,7 +527,7 @@ function App() {
                   </div>
                   <div>
                     <p className={`font-semibold ${isDarkMode ? 'text-gray-100' : 'text-gray-900'}`}>GitHub</p>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>github.com/alanrodriguez</p>
+                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>github.com/AlanRanchs</p>
                   </div>
                 </div>
                 
@@ -537,7 +537,7 @@ function App() {
                   </div>
                   <div>
                     <p className={`font-semibold ${isDarkMode ? 'text-gray-100' : 'text-gray-900'}`}>LinkedIn</p>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>linkedin.com/in/alanrodriguez</p>
+                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>linkedin.com/in/alanrdz10</p>
                   </div>
                 </div>
               </div>
@@ -607,7 +607,7 @@ function App() {
                 </span>
               </div>
               <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                Alan Rodriguez - Estudiante de Ingeniería en Sistemas Computacionales especializado en desarrollo full-stack.
+                Alan Rodriguez - Estudiante de Ingeniería en Sistemas Computacionales
               </p>
             </div>
             
@@ -630,15 +630,15 @@ function App() {
               <h4 className={`font-semibold ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>Tecnologías</h4>
               <div className={`space-y-2 text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                 <p>React • TypeScript • Node.js</p>
-                <p>Python • Java • MongoDB</p>
-                <p>Docker • Linux • Git</p>
+                <p>Python • Java • MySQL</p>
+                <p>HTML • CSS • Linux • Git</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-300 dark:border-gray-700 mt-8 pt-8 text-center">
             <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              © 2024 Alan Rodriguez Portfolio. Diseñado con ❤️ usando React y Tailwind CSS.
+              © 2025 Alan Rodriguez Portfolio. Todos los derechos reservados.
             </p>
           </div>
         </div>
