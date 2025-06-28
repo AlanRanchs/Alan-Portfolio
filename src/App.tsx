@@ -18,6 +18,7 @@ import {
   Smartphone,
   User
 } from 'lucide-react';
+import fotoAlan from './assets/Foto-Alan-CV.jpeg';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -166,7 +167,7 @@ function App() {
                 <div className="relative group">
                   <div className="w-64 h-64 rounded-2xl shadow-2xl overflow-hidden">
                     <img 
-                      src="/Foto-Alan-CV.jpeg" 
+                      src={fotoAlan}
                       alt="Alan Rodriguez - Estudiante de Sistemas Computacionales"
                       className="w-full h-full object-cover object-center"
                     />
@@ -214,7 +215,7 @@ function App() {
               </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="/CV-Alan Rodriguez.pdf"
+               href={`${import.meta.env.BASE_URL}CV-Alan Rodriguez.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 inline-block"
