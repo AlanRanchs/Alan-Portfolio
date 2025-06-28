@@ -262,7 +262,7 @@ function App() {
                 <div className="relative group">
                   <div className="w-64 h-64 rounded-2xl shadow-2xl overflow-hidden">
                     <img 
-                      src="/Foto-Alan-CV.jpeg" 
+                      src={fotoAlan}
                       alt="Alan Rodriguez - Estudiante de Sistemas Computacionales"
                       className="w-full h-full object-cover object-center"
                     />
